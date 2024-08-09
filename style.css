@@ -1,0 +1,729 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(152, 222, 234);
+}
+
+
+@media (min-width: 701px) {
+    .logo {
+        float: left;
+        position: absolute;
+        top: 0;
+        width: 120px;
+        height: 10vh;
+        background-image: url(log.png);
+        background-size: 100% 100%;
+
+    }
+
+    .main {
+        width: 100%;
+        height: 100vh;
+        background-color: rgb(0, 20, 56);
+        clip-path: polygon(0 10vh, 70vw 0, 80vw 5vh, 100vw 0, 100vw 90vh, 30vw 100vh, 20vw 95vh, 0 100vh, 0 0);
+        display: flex;
+        flex-flow: wrap;
+        flex-wrap: nowrap;
+        justify-content: center;
+    }
+
+    .intro {
+        width: 44vw;
+        color: white;
+        margin-top: 40vh;
+        display: inline-block;
+        animation-name: first1;
+        animation-duration: 3s;
+        animation-iteration-count: 1;
+        animation-fill-mode: both;
+        animation-timing-function: ease-in;
+
+    }
+
+    .in {
+        font-size: 2vw;
+        white-space: nowrap;
+        overflow: hidden;
+        animation: typing 2s steps(8, end) 1 forwards;
+        animation-delay: 0.2s;
+    }
+
+    .n {
+        font-size: 2.5vw;
+        color: aqua;
+        white-space: nowrap;
+        overflow: hidden;
+        animation: typing1 2s steps(16, end) 1 forwards;
+    }
+
+    .ty {
+        font-size: 2.2vw;
+        color: rgb(255, 255, 255);
+    }
+
+    .im {
+        float: right;
+        background-image: url(aditya.png);
+        background-position: 50% 40%;
+        background-color: aqua;
+        margin-top: 25vh;
+        margin-left: 5vw;
+        /* display: inline-block; */
+        width: 40vh;
+        height: 40vh;
+        border-top-right-radius: 4000px;
+        border-top-left-radius: 9000px;
+        border-bottom-left-radius: 4000px;
+        border-bottom-right-radius: 7000px;
+        box-shadow: 0px 0px 50px 10px rgb(87, 167, 167), inset 0px 0px 50px 0px rgb(0, 255, 255);
+        animation-name: first;
+        animation-duration: 4s;
+        animation-iteration-count: 1;
+        animation-fill-mode: both;
+        animation-timing-function: ease-in;
+    }
+
+    .abt {
+        margin-top: 10vh;
+    }
+
+    .abt h1 {
+        color: rgb(0, 0, 52);
+        width: 45%;
+        margin: auto;
+        text-align: center;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+    .abot {
+        /* background-color: rgb(0, 20, 56); */
+        text-align: center;
+        margin: auto;
+        width: 50%;
+        color: rgb(13, 17, 77);
+        padding: 2vw 2vh;
+        border-radius: 5px;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+
+    .cv {
+        width: 20%;
+        margin: auto;
+        justify-content: center;
+        text-align: center;
+        margin-bottom: 10vh;
+    }
+
+    .btn {
+        text-decoration: none;
+        text-transform: uppercase;
+        background: transparent;
+        border: 2px solid rgb(0, 36, 50);
+        color: rgb(0, 0, 0);
+        margin: 10px 0;
+        padding: 10px;
+        font-size: 15px;
+        font-weight: bold;
+        cursor: pointer;
+        transition: 0.2s ease-in-out;
+        border-radius: 5px;
+    }
+
+    .btn:hover {
+        transform: scale(1.05);
+        background: aqua;
+        color: rgb(0, 0, 0);
+        transition: 0 ease-in-out;
+    }
+
+    .btn a:link {
+        text-decoration: none;
+        color: rgb(0, 20, 56);
+    }
+
+    .btn a:visited {
+        text-decoration: none;
+    }
+
+    .btn a:hover {
+        text-decoration: none;
+    }
+
+    .btn a:active {
+        text-decoration: none;
+    }
+
+    .qli {
+        width: 100%;
+    }
+
+    .lis {
+        color: rgb(0, 20, 56);
+
+        background-color: rgba(82, 130, 130, 0);
+        border: 2px solid black;
+        width: 90%;
+        margin: auto;
+        height: 40vh;
+        margin-bottom: 10vh;
+        clip-path: polygon(0 10%, 50% 0%, 100% 10%, 100% 100%, 50% 90%, 0 100%);
+        border-top: 40px solid rgb(0, 20, 56);
+        border-bottom: 30px solid rgb(0, 20, 56);
+        border-bottom-left-radius: 500px;
+        border-top-left-radius: 0px;
+        border-top-right-radius: 0px;
+        border-bottom-right-radius: 500px;
+
+        text-align: center;
+        justify-content: center;
+    }
+
+    .lishead {
+        margin-top: 3vh;
+    }
+
+    .listext {
+        color: rgb(0, 20, 56);
+        display: flex;
+        width: 50%;
+        margin: auto;
+        height: 30vh;
+        text-decoration: none;
+        justify-content: center;
+        flex-wrap: wrap;
+        align-content: center;
+        font-size: xx-large;
+    }
+
+    .listext a {
+        margin-right: 5%;
+    }
+
+    .listext a:link {
+        text-decoration: none;
+        color: rgb(0, 20, 56);
+
+    }
+
+    .listext a:visited {
+        text-decoration: none;
+        color: rgb(0, 20, 56);
+
+    }
+
+    .listext a:hover {
+        text-decoration: none;
+        color: rgb(0, 20, 56);
+
+    }
+
+    .listext a:active {
+        text-decoration: none;
+        color: rgb(0, 20, 56);
+
+    }
+
+    .cf:hover {
+        background-color: rgba(255, 255, 255, 0.311);
+    }
+
+    .cc:hover {
+        background-color: rgba(255, 255, 255, 0.311);
+
+    }
+
+    .lc:hover {
+        background-color: rgba(255, 255, 255, 0.311);
+    }
+
+    .social {
+        background-color: rgb(0, 20, 56);
+        display: inline-block;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+        padding: 2vh 2vw;
+        margin-left: 82%;
+        position: fixed;
+        opacity: 90%;
+        top: 94vh;
+    }
+
+    .social a {
+        padding: 0 1vw;
+    }
+
+    .social:hover {
+        transform: scale(1.05);
+    }
+
+    .social a:hover {
+        transform: scale(1.5);
+        padding: 0 1vw;
+        color: aqua;
+    }
+
+    .git {
+        color: white;
+    }
+
+    .lin {
+        color: blue;
+    }
+
+    .mail {
+        color: rgb(170, 0, 0);
+    }
+
+    .foo {
+        color: wheat;
+        background-color: rgb(0, 20, 56);
+        justify-content: center;
+        padding: 5vw 1vh;
+    }
+
+    .foo h1 {
+        color: white;
+    }
+
+    .foo a {
+        color: wheat;
+        padding: 1vw 1vh;
+
+    }
+
+    .he {
+        width: 60%;
+        text-align: center;
+        margin: auto;
+        margin-bottom: 3vh;
+    }
+
+    .info {
+        padding: 1vw 1vh;
+        width: 60%;
+        text-align: center;
+        margin: auto;
+    }
+
+    .info p {
+        margin-top: 1vh;
+        margin-bottom: 1vh;
+    }
+
+    .info a i:hover {
+        transform: scale(1.2);
+    }
+
+
+    @keyframes first1 {
+        from {
+            opacity: 20%;
+        }
+    }
+
+    @keyframes first {
+        from {
+            opacity: 0;
+            transform: scale(0.5);
+            /* transform: rotate(0deg); */
+        }
+
+        35% {
+            /* transform: rotate(35deg); */
+        }
+
+        75% {
+            transform: scale(1.1);
+            /* transform: rotate(-35deg); */
+        }
+
+        to {
+            /* transform: rotate(0deg); */
+        }
+    }
+
+    @keyframes typing {
+        from {
+            width: 0;
+        }
+
+        100% {
+            width: 100%;
+        }
+    }
+
+    @keyframes typing1 {
+        from {
+            width: 0;
+        }
+
+        100% {
+            width: 100%;
+        }
+    }
+}
+
+@media (max-width:700px) {
+    .logo {
+        float: left;
+        position: absolute;
+        top: 0;
+        width: 120px;
+        height: 10vh;
+        background-image: url(log.png);
+        background-size: 100% 100%;
+
+    }
+
+    .main {
+        width: 100vw;
+        height: 100vh;
+        background-color: rgb(0, 20, 56);
+        clip-path: polygon(0 10vh, 70vw 0, 80vw 5vh, 100vw 0, 100vw 90vh, 30vw 100vh, 20vw 95vh, 0 100vh, 0 0);
+        display: flex;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .intro {
+        color: white;
+        /* display: inline-block; */
+        animation-name: first1;
+        animation-duration: 3s;
+        animation-iteration-count: 1;
+        animation-fill-mode: both;
+        animation-timing-function: ease-in;
+
+    }
+
+    .in {
+        font-size: 2.2vh;
+        white-space: nowrap;
+        overflow: hidden;
+        animation: typing 2s steps(8, end) 1 forwards;
+        animation-delay: 0.2s;
+    }
+
+    .n {
+        font-size: 2vh;
+        color: aqua;
+        white-space: nowrap;
+        overflow: hidden;
+        animation: typing1 2s steps(16, end) 1 forwards;
+    }
+
+    .ty {
+        font-size: 2.2vh;
+        color: rgb(255, 255, 255);
+    }
+
+    .im {
+        float: right;
+        background-image: url(aditya.png);
+        background-position: 50% 40%;
+        background-color: aqua;
+        margin-top: 10vh;
+        width: 30vh;
+        height: 30vh;
+        border-top-right-radius: 4000px;
+        border-top-left-radius: 9000px;
+        border-bottom-left-radius: 4000px;
+        border-bottom-right-radius: 7000px;
+        box-shadow: 0px 0px 50px 10px rgb(87, 167, 167), inset 0px 0px 50px 0px rgb(0, 255, 255);
+        animation-name: first;
+        animation-duration: 4s;
+        animation-iteration-count: 1;
+        animation-fill-mode: both;
+        animation-timing-function: ease-in;
+    }
+
+    .abt {
+        margin-top: 10vh;
+        /* margin-bottom: 10vh; */
+    }
+
+    .abt h1 {
+        color: rgb(0, 0, 52);
+        width: 40%;
+        font-size: x-large;
+        margin: auto;
+        margin-bottom: 2vh;
+        text-align: center;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+    .abot {
+        /* background-color: rgb(0, 20, 56); */
+        text-align: center;
+        margin: auto;
+        width: 50%;
+        margin-bottom: 4vh;
+        color: rgb(13, 17, 77);
+        padding: 2vw 2vh;
+        border-radius: 5px;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+
+    .cv {
+        width: 20%;
+        margin: auto;
+        justify-content: center;
+        text-align: center;
+        margin-bottom: 10vh;
+    }
+
+    .btn {
+        text-decoration: none;
+        /* text-transform: uppercase; */
+        background: transparent;
+        border: 2px solid rgb(0, 36, 50);
+        color: rgb(0, 0, 0);
+        margin: 0px 0px;
+        padding: 10px 10px;
+        font-weight: bold;
+        cursor: pointer;
+        transition: 0.2s ease-in-out;
+        border-radius: 5px;
+    }
+
+    .btn:hover {
+        background: rgb(0, 20, 56);
+        color: rgb(255, 255, 255);
+        transition: 0 ease-in-out;
+    }
+    .btn a:link {
+        text-decoration: none;
+        color: rgb(0, 20, 56);
+    }
+
+    .btn a:visited {
+        text-decoration: none;
+    }
+
+    .btn a:hover {
+        text-decoration: none;
+    }
+
+    .btn a:active {
+        text-decoration: none;
+    }
+
+    .qli {
+        width: 100%;
+    }
+
+    .lis {
+        color: rgb(0, 20, 56);
+
+        background-color: rgba(82, 130, 130, 0);
+        border: 2px solid black;
+        width: 90%;
+        margin: auto;
+        height: 40vh;
+        margin-bottom: 10vh;
+        clip-path: polygon(0 10%, 50% 0%, 100% 10%, 100% 100%, 50% 90%, 0 100%);
+        border-top: 40px solid rgb(0, 20, 56);
+        border-bottom: 30px solid rgb(0, 20, 56);
+        border-bottom-left-radius: 500px;
+        border-top-left-radius: 0px;
+        border-top-right-radius: 0px;
+        border-bottom-right-radius: 500px;
+
+        text-align: center;
+        justify-content: center;
+    }
+
+    .lishead {
+        margin-top: vh;
+    }
+
+    .listext {
+        color: rgb(0, 20, 56);
+        display: flex;
+        width: 50%;
+        margin: auto;
+        height: 30vh;
+        text-decoration: none;
+        justify-content: center;
+        flex-wrap: wrap;
+        align-content: center;
+        font-size: xx-large;
+    }
+
+    .listext a {
+        margin-right: 5%;
+    }
+
+    .listext a:link {
+        text-decoration: none;
+        color: rgb(0, 20, 56);
+
+    }
+
+    .listext a:visited {
+        text-decoration: none;
+        color: rgb(0, 20, 56);
+
+    }
+
+    .listext a:hover {
+        text-decoration: none;
+        color: rgb(0, 20, 56);
+
+    }
+
+    .listext a:active {
+        text-decoration: none;
+        color: rgb(0, 20, 56);
+
+    }
+
+    .cf:hover {
+        background-color: rgba(255, 255, 255, 0.311);
+    }
+
+    .cc:hover {
+        background-color: rgba(255, 255, 255, 0.311);
+
+    }
+
+    .lc:hover {
+        background-color: rgba(255, 255, 255, 0.311);
+    }
+
+        .social {
+            background-color: rgb(0, 20, 56);
+            display: inline-block;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+            padding: 1vh 2vw;
+            margin-left: 75%;
+            position: fixed;
+            opacity: 90%;
+            top: 96vh;
+            width: 20%;
+        }
+
+        .social a {
+            padding: 0 1vw;
+        }
+
+        .social:hover {
+            transform: scale(1.05);
+        }
+
+        .social a:hover {
+            transform: scale(1.5);
+            padding: 0 1vw;
+            color: aqua;
+        }
+
+        .git {
+            color: white;
+        }
+
+        .lin {
+            color: blue;
+        }
+
+        .mail {
+            color: rgb(170, 0, 0);
+        }
+
+
+
+    .foo {
+        color: wheat;
+        background-color: rgb(0, 20, 56);
+        justify-content: center;
+        padding: 5vw 1vh;
+    }
+
+    .foo h1 {
+        color: white;
+    }
+
+    .foo a {
+        color: wheat;
+        padding: 1vw 1vh;
+
+    }
+
+    .he {
+        width: 60%;
+        text-align: center;
+        margin: auto;
+        margin-bottom: 3vh;
+    }
+
+    .info {
+        padding: 1vw 1vh;
+        width: 60%;
+        text-align: center;
+        margin: auto;
+    }
+
+    .info p {
+        margin-top: 1vh;
+        margin-bottom: 1vh;
+    }
+
+    .info a i:hover {
+        transform: scale(1.2);
+    }
+
+
+    @keyframes first1 {
+        from {
+            opacity: 20%;
+        }
+    }
+
+    @keyframes first {
+        from {
+            opacity: 0;
+            transform: scale(0.5);
+            /* transform: rotate(0deg); */
+        }
+
+        35% {
+            /* transform: rotate(35deg); */
+        }
+
+        75% {
+            transform: scale(1.1);
+            /* transform: rotate(-35deg); */
+        }
+
+        to {
+            /* transform: rotate(0deg); */
+        }
+    }
+
+    @keyframes typing {
+        from {
+            width: 0;
+        }
+
+        100% {
+            width: 100%;
+        }
+    }
+
+    @keyframes typing1 {
+        from {
+            width: 0;
+        }
+
+        100% {
+            width: 100%;
+        }
+    }
+}

@@ -5,6 +5,7 @@
 
 body {
     background-color: rgb(152, 222, 234);
+    animation: multicolor 10s infinite forwards;
 }
 
 
@@ -80,6 +81,7 @@ body {
         border-bottom-left-radius: 4000px;
         border-bottom-right-radius: 7000px;
         box-shadow: 0px 0px 50px 10px rgb(87, 167, 167), inset 0px 0px 50px 0px rgb(0, 255, 255);
+
         animation-name: first;
         animation-duration: 4s;
         animation-iteration-count: 1;
@@ -318,6 +320,23 @@ body {
         transform: scale(1.2);
     }
 
+    @keyframes multicolor {
+        from {
+            background-color: rgb(152, 222, 234);
+
+        }
+
+        50% {
+            background-color: rgb(126, 236, 255);
+
+        }
+
+        to {
+            background-color: rgb(152, 222, 234);
+
+        }
+
+    }
 
     @keyframes first1 {
         from {
@@ -437,6 +456,7 @@ body {
         border-bottom-left-radius: 4000px;
         border-bottom-right-radius: 7000px;
         box-shadow: 0px 0px 50px 10px rgb(87, 167, 167), inset 0px 0px 50px 0px rgb(0, 255, 255);
+
         animation-name: first;
         animation-duration: 4s;
         animation-iteration-count: 1;
@@ -498,6 +518,7 @@ body {
         color: rgb(255, 255, 255);
         transition: 0 ease-in-out;
     }
+
     .btn a:link {
         text-decoration: none;
         color: rgb(0, 20, 56);
@@ -517,6 +538,7 @@ body {
 
     .qli {
         width: 100%;
+
     }
 
     .lis {
@@ -550,6 +572,7 @@ body {
         width: 50%;
         margin: auto;
         height: 30vh;
+        display: inline-block;
         text-decoration: none;
         justify-content: center;
         flex-wrap: wrap;
@@ -598,44 +621,44 @@ body {
         background-color: rgba(255, 255, 255, 0.311);
     }
 
-        .social {
-            background-color: rgb(0, 20, 56);
-            display: inline-block;
-            border-top-left-radius: 5px;
-            border-top-right-radius: 5px;
-            padding: 1vh 2vw;
-            margin-left: 75%;
-            position: fixed;
-            opacity: 90%;
-            top: 96vh;
-            width: 20%;
-        }
+    .social {
+        background-color: rgb(0, 20, 56);
+        display: inline-block;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+        padding: 1vh 2vw;
+        margin-left: 75%;
+        position: fixed;
+        opacity: 90%;
+        top: 96vh;
+        width: 20%;
+    }
 
-        .social a {
-            padding: 0 1vw;
-        }
+    .social a {
+        padding: 0 1vw;
+    }
 
-        .social:hover {
-            transform: scale(1.05);
-        }
+    .social:hover {
+        transform: scale(1.05);
+    }
 
-        .social a:hover {
-            transform: scale(1.5);
-            padding: 0 1vw;
-            color: aqua;
-        }
+    .social a:hover {
+        transform: scale(1.5);
+        padding: 0 1vw;
+        color: aqua;
+    }
 
-        .git {
-            color: white;
-        }
+    .git {
+        color: white;
+    }
 
-        .lin {
-            color: blue;
-        }
+    .lin {
+        color: blue;
+    }
 
-        .mail {
-            color: rgb(170, 0, 0);
-        }
+    .mail {
+        color: rgb(170, 0, 0);
+    }
 
 
 

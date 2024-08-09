@@ -320,6 +320,8 @@ body {
         transform: scale(1.2);
     }
 
+    
+
     @keyframes first1 {
         from {
             opacity: 20%;
@@ -733,19 +735,19 @@ body {
     }
 }
 @keyframes multicolor {
-        from {
-            background-color: rgb(152, 222, 234);
-
-        }
-
-        50% {
-            background-color: rgb(126, 236, 255);
-
-        }
-
-        to {
-            background-color: rgb(152, 222, 234);
-
-        }
+    from {
+        background-color: rgb(152, 222, 234);
 
     }
+
+    50% {
+        background-color: rgb(126, 236, 255);
+
+    }
+
+    to {
+        background-color: rgb(152, 222, 234);
+
+    }
+
+}

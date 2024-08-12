@@ -90,12 +90,15 @@ body {
     }
 
     .abt {
-        margin-top: 10vh;
+        margin-top: 0vh;
+        height: 80vh;
+
     }
 
     .abt h1 {
+        padding-top: 20vh;
+        margin-top: 20vh;
         color: rgb(0, 0, 52);
-        width: 45%;
         margin: auto;
         text-align: center;
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -161,35 +164,37 @@ body {
 
     .qli {
         width: 100%;
+        background-color: rgb(0, 20, 56);
+        margin-bottom: 10vh;
     }
 
     .lis {
-        color: rgb(0, 20, 56);
-
+        color: aqua;
         background-color: rgba(82, 130, 130, 0);
-        border: 2px solid black;
+        border: 2px solid wheat;
         width: 90%;
         margin: auto;
-        height: 40vh;
+        height: 42vh;
         margin-bottom: 10vh;
-        clip-path: polygon(0 10%, 50% 0%, 100% 10%, 100% 100%, 50% 90%, 0 100%);
-        border-top: 40px solid rgb(0, 20, 56);
-        border-bottom: 30px solid rgb(0, 20, 56);
+        clip-path: polygon(0 8%, 50% 12%, 100% 8%, 100% 100%, 50% 90%, 0 100%);
+        border-top: 40px solid aqua;
+        border-bottom: 30px solid aqua;
         border-bottom-left-radius: 500px;
         border-top-left-radius: 0px;
         border-top-right-radius: 0px;
         border-bottom-right-radius: 500px;
-
         text-align: center;
         justify-content: center;
     }
 
     .lishead {
         margin-top: 3vh;
+        margin-bottom: 2vh;
+        color: wheat;
     }
 
     .listext {
-        color: rgb(0, 20, 56);
+        color: aqua;
         display: flex;
         width: 50%;
         margin: auto;
@@ -207,25 +212,25 @@ body {
 
     .listext a:link {
         text-decoration: none;
-        color: rgb(0, 20, 56);
+        color: wheat;
 
     }
 
     .listext a:visited {
         text-decoration: none;
-        color: rgb(0, 20, 56);
+        color: wheat;
 
     }
 
     .listext a:hover {
         text-decoration: none;
-        color: rgb(0, 20, 56);
+        color: wheat;
 
     }
 
     .listext a:active {
         text-decoration: none;
-        color: rgb(0, 20, 56);
+        color: wheat;
 
     }
 
@@ -280,6 +285,73 @@ body {
         color: rgb(170, 0, 0);
     }
 
+    .contact {
+        height: 50vh;
+        margin-bottom: 20vh;
+        padding: 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact h2 {
+        font-family: 'Poppins', sans-serif;
+        color: rgb(0, 20, 56);
+        margin: 20px 0;
+    }
+
+    .contact-details {
+        background-color: rgba(2, 20, 56, 0.9);
+        text-align: center;
+        justify-content: center;
+        width: 60vw;
+        margin: auto;
+        padding: 50px;
+        padding-left: 8vw;
+        margin-top: 20px;
+    }
+
+    input {
+        color: rgb(231, 231, 231);
+        letter-spacing: 1px;
+        text-align: center;
+        width: 80%;
+        background-color: transparent;
+        border: none;
+        border-bottom: 1px solid aqua;
+    }
+    input:focus {
+        outline: none;
+    }
+
+    ::placeholder {
+        color: aqua;
+        opacity: 0.5;
+        font-size: 11px;
+    }
+
+    .submit {
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        width: 30%;
+        margin: 5vh auto;
+        padding: 0;
+        background: transparent;
+        border: 1px solid wheat;
+        border-radius: 5px;
+        color: wheat;
+        font-size: 16px;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        cursor: pointer;
+    }
+
+    .submit:hover {
+        background: aqua;
+        font-weight: bolder;
+        color: rgb(0, 20, 56);
+        border: 3px solid rgb(0, 20, 56);
+    }
+
     .foo {
         color: wheat;
         background-color: rgb(0, 20, 56);
@@ -296,17 +368,21 @@ body {
         padding: 1vw 1vh;
 
     }
-    .infologo{
+
+    .infologo {
         display: inline-block;
     }
-    .infonumb{
+
+    .infonumb {
         display: inline-block;
         margin-bottom: 3vh;
     }
-    .infomail{
+
+    .infomail {
         display: inline-block;
     }
-    .infomai{
+
+    .infomai {
         display: inline-block;
     }
 
@@ -333,7 +409,7 @@ body {
         transform: scale(1.2);
     }
 
-    
+
 
     @keyframes first1 {
         from {
@@ -463,6 +539,7 @@ body {
 
     .abt {
         margin-top: 10vh;
+        /* height: 80vh; */
         /* margin-bottom: 10vh; */
     }
 
@@ -535,21 +612,21 @@ body {
 
     .qli {
         width: 100%;
-
+        background-color: rgb(0, 20, 56);
     }
 
     .lis {
-        color: rgb(0, 20, 56);
+        color: aqua;
 
         background-color: rgba(82, 130, 130, 0);
-        border: 2px solid black;
+        border: 2px solid wheat;
         width: 90%;
         margin: auto;
         height: 40vh;
         margin-bottom: 10vh;
-        clip-path: polygon(0 10%, 50% 0%, 100% 10%, 100% 100%, 50% 90%, 0 100%);
-        border-top: 40px solid rgb(0, 20, 56);
-        border-bottom: 30px solid rgb(0, 20, 56);
+        clip-path: polygon(0 8%, 50% 12%, 100% 8%, 100% 100%, 50% 90%, 0 100%);
+        border-top: 40px solid aqua;
+        border-bottom: 30px solid aqua;
         border-bottom-left-radius: 500px;
         border-top-left-radius: 0px;
         border-top-right-radius: 0px;
@@ -561,10 +638,11 @@ body {
 
     .lishead {
         margin-top: vh;
+        color: wheat;
     }
 
     .listext {
-        color: rgb(0, 20, 56);
+        color: wheat;
         display: flex;
         width: 50%;
         margin: auto;
@@ -583,25 +661,28 @@ body {
 
     .listext a:link {
         text-decoration: none;
-        color: rgb(0, 20, 56);
+        color: wheat;
+
 
     }
 
     .listext a:visited {
         text-decoration: none;
-        color: rgb(0, 20, 56);
+        color: wheat;
 
     }
 
     .listext a:hover {
         text-decoration: none;
-        color: rgb(0, 20, 56);
+        color: wheat;
+
 
     }
 
     .listext a:active {
         text-decoration: none;
-        color: rgb(0, 20, 56);
+        color: wheat;
+
 
     }
 
@@ -657,17 +738,84 @@ body {
         color: rgb(170, 0, 0);
     }
 
+    .contact {
+        height: 50vh;
+        margin-bottom: 10vh;
+        padding: 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 
+    .contact h2 {
+        font-family: 'Poppins', sans-serif;
+        color: rgb(0, 20, 56);
+        margin: 20px 0;
+    }
+
+    .contact-details {
+        background-color: rgba(2, 20, 56, 0.9);
+        text-align: center;
+        justify-content: center;
+        width: 60vw;
+        margin: auto;
+        padding: 50px;
+        padding-left: 13vw;
+        margin-top: 20px;
+    }
+
+    input {
+        color: rgb(231, 231, 231);
+        letter-spacing: 1px;
+        text-align: center;
+        width: 80%;
+        background-color: transparent;
+        border: none;
+        border-bottom: 1px solid aqua;
+    }
+    input:focus {
+        outline: none;
+    }
+
+    ::placeholder {
+        color: aqua;
+        opacity: 0.5;
+        font-size: 11px;
+    }
+
+    .submit {
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        width: 30%;
+        margin: 5vh auto;
+        padding: 0;
+        background: transparent;
+        border: 1px solid wheat;
+        border-radius: 5px;
+        color: wheat;
+        font-size: 16px;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        cursor: pointer;
+    }
+
+    .submit:hover {
+        background: aqua;
+        font-weight: bolder;
+        color: rgb(0, 20, 56);
+        border: 3px solid rgb(0, 20, 56);
+    }
 
     .foo {
         color: wheat;
         background-color: rgb(0, 20, 56);
         /* justify-content: center; */
         padding: 5vh 4vw;
+        
     }
 
     .foo h1 {
         color: white;
+        font-size: xx-large;
     }
 
     .foo a {
@@ -675,17 +823,21 @@ body {
         padding: 1vw 1vh;
 
     }
-    .infologo{
+
+    .infologo {
         display: inline-block;
     }
-    .infonumb{
+
+    .infonumb {
         display: inline-block;
         margin-bottom: 3vh;
     }
-    .infomail{
+
+    .infomail {
         display: inline-block;
     }
-    .infomai{
+
+    .infomai {
         display: inline-block;
     }
 
@@ -760,6 +912,7 @@ body {
         }
     }
 }
+
 @keyframes multicolor {
     from {
         background-color: rgb(152, 222, 234);

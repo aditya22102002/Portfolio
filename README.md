@@ -34,13 +34,13 @@ This website is designed to serve as my personal portfolio. Feel free to explore
 
 ## Contributing
 
-Contributions, issues, and feature requests are welcome! Feel free to check the [issues page](https://github.com/yourusername/portfolio/issues) if you want to contribute.
+Contributions, issues, and feature requests are welcome! Feel free to check the [issues page](https://github.com/aditya22102002/portfolio/issues) if you want to contribute.
 
 ## Contact
 
 If you want to contact me, you can reach me at:
 
-- **Email:** [your.email@example.com](mailto:khemka.adityaraj@gmail.com)
-- **LinkedIn:** [Your LinkedIn Profile](www.linkedin.com/in/aditya-raj-khemka-042b5629b)
+- **Email:** [khemka.adityaraj@gmail.com](mailto: khemka.adityaraj@gmail.com)
+- **LinkedIn:** [Aditya Raj Khemka](www.linkedin.com/in/aditya-raj-khemka-042b5629b)
 
 Thank you for checking out my portfolio!

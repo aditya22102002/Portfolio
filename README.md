@@ -40,7 +40,7 @@ Contributions, issues, and feature requests are welcome! Feel free to check the 
 
 If you want to contact me, you can reach me at:
 
-- **Email:** [khemka.adityaraj@gmail.com](mailto: khemka.adityaraj@gmail.com)
-- **LinkedIn:** [Aditya Raj Khemka](www.linkedin.com/in/aditya-raj-khemka-042b5629b)
+- **Email:** [khemka.adityaraj@gmail.com]
+- **Contact:** [9754633334]
 
 Thank you for checking out my portfolio!

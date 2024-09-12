@@ -4,27 +4,61 @@
 }
 
 body {
-    background-color: rgb(152, 222, 234);
+    background-color: #697565;
     animation: multicolor 10s infinite forwards;
 }
 
 
 @media (min-width: 701px) {
+    
+    .nav{
+        height: 10%;
+        background-color: #181c14d7;
+        position: fixed;
+        display: block;
+        width: 100%;
+        z-index: 5;
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+    }
     .logo {
-        float: left;
-        position: absolute;
-        top: 0;
+        display: inline-block;
         width: 120px;
         height: 10vh;
         background-image: url(log.png);
         background-size: 100% 100%;
+    }
+    .social {
+        margin: auto;
+        display: inline-block;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+    }
+    .social a{
+        
+        padding: 30px 30px 0 0;
+    }
+    .social i {
+        font-size: 1.5vw; /* Adjust the size as needed */
+        color: #ECDFCC;
+      }
+    .social:hover {
+        transform: scale(1.05);
+    }
 
+    .social a:hover {
+        transform: scale(1.5);
+        padding: 0 1vw;
+        color: aqua;
     }
 
     .main {
         width: 100%;
         height: 100vh;
-        background-color: rgb(0, 20, 56);
+        background-color: #181C14;
         clip-path: polygon(0 10vh, 70vw 0, 80vw 5vh, 100vw 0, 100vw 90vh, 30vw 100vh, 20vw 95vh, 0 100vh, 0 0);
         display: flex;
         flex-flow: wrap;
@@ -55,7 +89,7 @@ body {
 
     .n {
         font-size: 2.5vw;
-        color: aqua;
+        color: #ECDFCC;
         white-space: nowrap;
         overflow: hidden;
         animation: typing1 2s steps(16, end) 1 forwards;
@@ -70,7 +104,9 @@ body {
         float: right;
         background-image: url(aditya.png);
         background-position: 50% 40%;
-        background-color: aqua;
+        background-size: cover;
+        background-repeat: no-repeat; 
+        background-color: #ECDFCC;
         margin-top: 25vh;
         margin-left: 5vw;
         /* display: inline-block; */
@@ -80,7 +116,7 @@ body {
         border-top-left-radius: 9000px;
         border-bottom-left-radius: 4000px;
         border-bottom-right-radius: 7000px;
-        box-shadow: 0px 0px 50px 10px rgb(87, 167, 167), inset 0px 0px 50px 0px rgb(0, 255, 255);
+        box-shadow: 0px 0px 50px 10px #ECDFCC, inset 0px 0px 50px 0px #ECDFCC;
 
         animation-name: first;
         animation-duration: 4s;
@@ -89,49 +125,87 @@ body {
         animation-timing-function: ease-in;
     }
 
-    .abt {
-        margin-top: 0vh;
-        height: 80vh;
+    .abtsec{
 
+        margin-top: 5%;
+        margin-bottom: 5%;
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+        justify-content: space-around;
+        padding: 5px;
+        color: #ECDFCC;
     }
-
-    .abt h1 {
-        padding-top: 20vh;
-        margin-top: 20vh;
-        color: rgb(0, 0, 52);
-        margin: auto;
-        text-align: center;
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+    .abt {
+        width: 50%;
+        font-size: 1.8vw;
     }
 
     .abot {
-        /* background-color: rgb(0, 20, 56); */
-        text-align: center;
-        margin: auto;
-        width: 50%;
-        color: rgb(13, 17, 77);
+        color: #181C14;
         padding: 2vw 2vh;
         border-radius: 5px;
-        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-family: 'Futura';
     }
 
-    .cv {
+
+    .postcard{
         width: 20%;
+        background-color: #181c14b7;
+        border-radius: 10px;
+    }
+    
+    .postim{
+        margin-top: 2%;
+        height: 60%;
+        background-image: url(adi2.png);
+        background-position: 10% 10%;
+        background-size: cover;
+        background-repeat: no-repeat; 
+    }
+    .pinfo{
+        padding-top: 20%;
+        display: flex;
+        width: 40%;
         margin: auto;
-        justify-content: center;
+        font-size: 1vw;
+    }
+    .loc{
+        display: inline-block;
+    }
+    .postloc{
+        display: inline-block;
+    }
+    .pinfo2{
+        padding-top: 2%;
+        display: flex;
+        width: 60%;
+        margin: auto;
+        font-size: 1vw;
+    }
+    .edu{
+        display: inline-block;
+    }
+    .postadd{
+        display: inline-block;
+    }
+
+    .cv{
+        font-size: 1vw;
+        padding-top: 5%;
+        width: 50%;
         text-align: center;
-        margin-bottom: 10vh;
+        margin: auto;
     }
 
     .btn {
+        text-align: center;
         text-decoration: none;
         text-transform: uppercase;
         background: transparent;
-        border: 2px solid rgb(0, 36, 50);
-        color: rgb(0, 0, 0);
-        margin: 10px 0;
-        padding: 10px;
-        font-size: 15px;
+        border: 2px solid #ECDFCC;
+        color: #ECDFCC;
         font-weight: bold;
         cursor: pointer;
         transition: 0.2s ease-in-out;
@@ -140,14 +214,13 @@ body {
 
     .btn:hover {
         transform: scale(1.05);
-        background: aqua;
-        color: rgb(0, 0, 0);
+        color: #ECDFCC;
         transition: 0 ease-in-out;
     }
 
     .btn a:link {
         text-decoration: none;
-        color: rgb(0, 20, 56);
+        color: #ECDFCC;
     }
 
     .btn a:visited {
@@ -164,50 +237,66 @@ body {
 
     .qli {
         width: 100%;
-        background-color: rgb(0, 20, 56);
-        margin-bottom: 10vh;
+        background-color: #3C3D37;
     }
 
     .lis {
-        color: aqua;
         background-color: rgba(82, 130, 130, 0);
-        border: 2px solid wheat;
         width: 90%;
         margin: auto;
-        height: 42vh;
-        margin-bottom: 10vh;
-        clip-path: polygon(0 8%, 50% 12%, 100% 8%, 100% 100%, 50% 90%, 0 100%);
-        border-top: 40px solid aqua;
-        border-bottom: 30px solid aqua;
-        border-bottom-left-radius: 500px;
-        border-top-left-radius: 0px;
-        border-top-right-radius: 0px;
-        border-bottom-right-radius: 500px;
+
         text-align: center;
         justify-content: center;
     }
 
     .lishead {
-        margin-top: 3vh;
+        padding-top: 5vh;
         margin-bottom: 2vh;
-        color: wheat;
+        color: #697565;
+        font-size: 2vw;
     }
-
+    .prog{
+        padding-top: 1vw;
+        font-size: 5vw;
+    }
+    .cpp{
+        display: inline-block;
+    }
+    .java{
+        display: inline-block;
+    }
+    .html{
+        display: inline-block;
+    }
+    .css{
+        display: inline-block;
+    }
+    .js{
+        display: inline-block;
+    }
+    .sql{
+        display: inline-block;
+    }
+    .ghub{
+        display: inline-block;
+        color: #ECDFCC;
+    }
     .listext {
-        color: aqua;
         display: flex;
         width: 50%;
+        padding-top: 3vw;
+        padding-bottom: 3vw;
         margin: auto;
-        height: 30vh;
         text-decoration: none;
         justify-content: center;
         flex-wrap: wrap;
         align-content: center;
-        font-size: xx-large;
     }
+
 
     .listext a {
         margin-right: 5%;
+        font-size: 2vw;
     }
 
     .listext a:link {
@@ -247,114 +336,78 @@ body {
         background-color: rgba(255, 255, 255, 0.311);
     }
 
-    .social {
-        background-color: rgb(0, 20, 56);
-        display: inline-block;
-        border-top-left-radius: 5px;
-        border-top-right-radius: 5px;
-        padding: 2vh 2vw;
-        margin-left: 82%;
-        position: fixed;
-        opacity: 90%;
-        top: 94vh;
-    }
-
-    .social a {
-        padding: 0 1vw;
-    }
-
-    .social:hover {
-        transform: scale(1.05);
-    }
-
-    .social a:hover {
-        transform: scale(1.5);
-        padding: 0 1vw;
-        color: aqua;
-    }
-
-    .git {
-        color: white;
-    }
-
-    .lin {
-        color: blue;
-    }
-
-    .mail {
-        color: rgb(170, 0, 0);
-    }
-
     .contact {
-        height: 50vh;
-        margin-bottom: 20vh;
-        padding: 0px;
+        padding-top: 5vw;
         display: flex;
         flex-direction: column;
         align-items: center;
+        padding-bottom: 5vw;
     }
 
-    .contact h2 {
+    .contact h1 {
         font-family: 'Poppins', sans-serif;
-        color: rgb(0, 20, 56);
-        margin: 20px 0;
+        color: #181C14;
+        width: 30%;
+        text-align: center;
+        margin: auto;
+        margin-top: 10vh;
+        font-size: 3vw;
     }
 
     .contact-details {
-        background-color: rgba(2, 20, 56, 0.9);
+        background-color: #3C3D37;
         text-align: center;
         justify-content: center;
-        width: 60vw;
+        width: 70%;
         margin: auto;
-        padding: 50px;
-        padding-left: 5vw;
-        margin-top: 20px;
+        margin-top: 10vh;
+        padding: 2%;
     }
 
     input {
         color: rgb(231, 231, 231);
-        letter-spacing: 1px;
         text-align: center;
-        width: 80%;
+        width: 70%;
         background-color: transparent;
         border: none;
-        border-bottom: 1px solid aqua;
+        border-bottom: 1px solid #ECDFCC;
+        font-size: 1.5vw;
     }
     input:focus {
         outline: none;
     }
 
     ::placeholder {
-        color: aqua;
+        color: #ECDFCC;
         opacity: 0.5;
-        font-size: 11px;
+        font-size: 1vw;
     }
 
     .submit {
         text-transform: uppercase;
         letter-spacing: 1px;
-        width: 30%;
+        width: 50%;
         margin: 5vh auto;
         padding: 0;
         background: transparent;
-        border: 1px solid wheat;
+        border: 3px solid wheat;
         border-radius: 5px;
         color: wheat;
-        font-size: 16px;
+        font-size: 1.5vw;
         font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
         cursor: pointer;
     }
 
     .submit:hover {
-        background: aqua;
+        background: #ECDFCC;
         font-weight: bolder;
-        color: rgb(0, 20, 56);
+        color: #181C14;
         border: 3px solid rgb(0, 20, 56);
     }
 
     .foo {
         color: wheat;
-        background-color: rgb(0, 20, 56);
+        background-color: #181C14;
         /* justify-content: center; */
         padding: 8vh 4vw;
     }
@@ -460,21 +513,46 @@ body {
 }
 
 @media (max-width:700px) {
+    .nav{
+        height: 10%;
+        background-color: #181c14d7;
+        position: fixed;
+        display: block;
+        width: 100%;
+        z-index: 5;
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+    }
     .logo {
-        float: left;
-        position: absolute;
-        top: 0;
+        display: inline-block;
         width: 120px;
         height: 10vh;
         background-image: url(log.png);
         background-size: 100% 100%;
+    }
+    .social a{
+        
+        padding: 30px 30px 0 0;
+    }
+    .social i {
+        font-size: 1.5vw; /* Adjust the size as needed */
+        color: #ECDFCC;
+      }
+    .social:hover {
+        transform: scale(1.05);
+    }
 
+    .social a:hover {
+        transform: scale(1.5);
+        padding: 0 1vw;
+        color: aqua;
     }
 
     .main {
         width: 100vw;
         height: 100vh;
-        background-color: rgb(0, 20, 56);
+        background-color: #181C14;
         clip-path: polygon(0 10vh, 70vw 0, 80vw 5vh, 100vw 0, 100vw 90vh, 30vw 100vh, 20vw 95vh, 0 100vh, 0 0);
         display: flex;
         flex-wrap: wrap;
@@ -492,7 +570,6 @@ body {
         animation-iteration-count: 1;
         animation-fill-mode: both;
         animation-timing-function: ease-in;
-
     }
 
     .in {
@@ -505,7 +582,8 @@ body {
 
     .n {
         font-size: 2vh;
-        color: aqua;
+        color: #ECDFCC;
+        
         white-space: nowrap;
         overflow: hidden;
         animation: typing1 2s steps(16, end) 1 forwards;
@@ -520,7 +598,9 @@ body {
         float: right;
         background-image: url(aditya.png);
         background-position: 50% 40%;
-        background-color: aqua;
+        background-size: cover;
+        background-repeat: no-repeat; 
+        background-color: #ECDFCC;
         margin-top: 10vh;
         width: 30vh;
         height: 30vh;
@@ -528,7 +608,8 @@ body {
         border-top-left-radius: 9000px;
         border-bottom-left-radius: 4000px;
         border-bottom-right-radius: 7000px;
-        box-shadow: 0px 0px 50px 10px rgb(87, 167, 167), inset 0px 0px 50px 0px rgb(0, 255, 255);
+        box-shadow: 0px 0px 50px 10px #ECDFCC, inset 0px 0px 50px 0px #ECDFCC;
+        
 
         animation-name: first;
         animation-duration: 4s;
@@ -536,51 +617,83 @@ body {
         animation-fill-mode: both;
         animation-timing-function: ease-in;
     }
-
-    .abt {
-        margin-top: 10vh;
-        /* height: 80vh; */
-        /* margin-bottom: 10vh; */
+    .abtsec{
+        margin-top: 5%;
+        margin-bottom: 5%;
+        justify-content: center;
+        padding: 5px;
+        color: #ECDFCC;
     }
 
-    .abt h1 {
-        color: rgb(0, 0, 52);
-        width: 40%;
-        font-size: x-large;
-        margin: auto;
-        margin-bottom: 2vh;
-        text-align: center;
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    .abt {
+        width: 100%;
+        font-size: 5vw;
     }
 
     .abot {
-        /* background-color: rgb(0, 20, 56); */
-        text-align: center;
-        margin: auto;
-        width: 50%;
-        margin-bottom: 4vh;
-        color: rgb(13, 17, 77);
+        color: #181C14;
         padding: 2vw 2vh;
         border-radius: 5px;
-        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-family: 'Futura';
+    }
+    
+    .postcard{
+        background-color: #181c14b7;
+        border-radius: 10px;
+        width: 60%;
+        margin: auto;
+        height: 60vh;
+    }
+    
+    .postim{
+        margin-top: 2%;
+        height: 60%;
+        background-image: url(adi2.png);
+        background-size: cover;
+        background-repeat: no-repeat; 
+    }
+    .pinfo{
+        padding-top: 20%;
+        display: flex;
+        width: 40%;
+        margin: auto;
+        font-size: 3vw;
+    }
+    .loc{
+        display: inline-block;
+    }
+    .postloc{
+        display: inline-block;
+    }
+    .pinfo2{
+        padding-top: 7%;
+        display: flex;
+        width: 60%;
+        margin: auto;
+        font-size: 3vw;
+    }
+    .edu{
+        display: inline-block;
+    }
+    .postadd{
+        display: inline-block;
     }
 
-    .cv {
-        width: 20%;
-        margin: auto;
-        justify-content: center;
+    .cv{
+        font-size: 5vw;
+        padding-top: 7%;
+        width: 50%;
         text-align: center;
-        margin-bottom: 10vh;
+        margin: auto;
     }
 
     .btn {
+        text-align: center;
         text-decoration: none;
-        /* text-transform: uppercase; */
+        text-transform: uppercase;
         background: transparent;
-        border: 2px solid rgb(0, 36, 50);
-        color: rgb(0, 0, 0);
-        margin: 0px 0px;
-        padding: 10px 10px;
+        border: 2px solid #ECDFCC;
+        color: #ECDFCC;
         font-weight: bold;
         cursor: pointer;
         transition: 0.2s ease-in-out;
@@ -588,14 +701,14 @@ body {
     }
 
     .btn:hover {
-        background: rgb(0, 20, 56);
-        color: rgb(255, 255, 255);
+        transform: scale(1.05);
+        color: #ECDFCC;
         transition: 0 ease-in-out;
     }
 
     .btn a:link {
         text-decoration: none;
-        color: rgb(0, 20, 56);
+        color: #ECDFCC;
     }
 
     .btn a:visited {
@@ -612,47 +725,62 @@ body {
 
     .qli {
         width: 100%;
-        background-color: rgb(0, 20, 56);
+        background-color: #3C3D37;
     }
 
     .lis {
-        color: aqua;
-
         background-color: rgba(82, 130, 130, 0);
-        border: 2px solid wheat;
         width: 90%;
         margin: auto;
-        height: 40vh;
-        margin-bottom: 10vh;
-        clip-path: polygon(0 8%, 50% 12%, 100% 8%, 100% 100%, 50% 90%, 0 100%);
-        border-top: 40px solid aqua;
-        border-bottom: 30px solid aqua;
-        border-bottom-left-radius: 500px;
-        border-top-left-radius: 0px;
-        border-top-right-radius: 0px;
-        border-bottom-right-radius: 500px;
 
         text-align: center;
         justify-content: center;
     }
 
     .lishead {
-        margin-top: vh;
-        color: wheat;
+        padding-top: 5vh;
+        margin-bottom: 2vh;
+        color: #697565;
+        font-size: 10vw;
+    }
+    .prog{
+        padding-top: 1vw;
+        font-size: 20vw;
+    }
+    .cpp{
+        display: inline-block;
+    }
+    .java{
+        display: inline-block;
+    }
+    .html{
+        display: inline-block;
+    }
+    .css{
+        display: inline-block;
+    }
+    .js{
+        display: inline-block;
+    }
+    .sql{
+        display: inline-block;
+    }
+    .ghub{
+        display: inline-block;
+        color: #ECDFCC;
     }
 
     .listext {
-        color: wheat;
         display: flex;
         width: 50%;
+        padding-top: 3vw;
+        padding-bottom: 3vw;
         margin: auto;
-        height: 30vh;
-        display: inline-block;
         text-decoration: none;
         justify-content: center;
         flex-wrap: wrap;
         align-content: center;
-        font-size: xx-large;
+        font-size: 10vw;
     }
 
     .listext a {
@@ -698,99 +826,61 @@ body {
     .lc:hover {
         background-color: rgba(255, 255, 255, 0.311);
     }
-
-    .social {
-        background-color: rgb(0, 20, 56);
-        display: inline-block;
-        border-top-left-radius: 5px;
-        border-top-right-radius: 5px;
-        padding: 1vh 2vw;
-        margin-left: 75%;
-        position: fixed;
-        opacity: 90%;
-        top: 96vh;
-        width: 20%;
-    }
-
-    .social a {
-        padding: 0 1vw;
-    }
-
-    .social:hover {
-        transform: scale(1.05);
-    }
-
-    .social a:hover {
-        transform: scale(1.5);
-        padding: 0 1vw;
-        color: aqua;
-    }
-
-    .git {
-        color: white;
-    }
-
-    .lin {
-        color: blue;
-    }
-
-    .mail {
-        color: rgb(170, 0, 0);
-    }
-
     .contact {
-        height: 50vh;
-        margin-bottom: 10vh;
-        padding: 0px;
+        padding-top: 5vw;
         display: flex;
         flex-direction: column;
         align-items: center;
+        padding-bottom: 25vw;
     }
 
-    .contact h2 {
+    .contact h1 {
         font-family: 'Poppins', sans-serif;
-        color: rgb(0, 20, 56);
-        margin: 20px 0;
+        color: #181C14;
+        width: 80%;
+        text-align: center;
+        margin: auto;
+        margin-top: 10vh;
+        font-size: 10vw;
     }
 
     .contact-details {
-        background-color: rgba(2, 20, 56, 0.9);
+        background-color: #3C3D37;
         text-align: center;
         justify-content: center;
-        width: 60vw;
+        width: 70%;
         margin: auto;
-        padding: 50px;
-        padding-left: 13vw;
-        margin-top: 20px;
+        margin-top: 10vh;
+        padding: 2%;
     }
 
     input {
         color: rgb(231, 231, 231);
-        letter-spacing: 1px;
         text-align: center;
-        width: 80%;
+        width: 70%;
         background-color: transparent;
         border: none;
-        border-bottom: 1px solid aqua;
+        border-bottom: 1px solid #ECDFCC;
+        font-size: 10vw;
     }
     input:focus {
         outline: none;
     }
 
     ::placeholder {
-        color: aqua;
+        color: #ECDFCC;
         opacity: 0.5;
-        font-size: 11px;
+        font-size: 5vw;
     }
 
     .submit {
         text-transform: uppercase;
         letter-spacing: 1px;
-        width: 30%;
+        width: 50%;
         margin: 5vh auto;
         padding: 0;
         background: transparent;
-        border: 1px solid wheat;
+        border: 3px solid wheat;
         border-radius: 5px;
         color: wheat;
         font-size: 16px;
@@ -799,15 +889,16 @@ body {
     }
 
     .submit:hover {
-        background: aqua;
+        background: #ECDFCC;
         font-weight: bolder;
-        color: rgb(0, 20, 56);
+        color: #181C14;
         border: 3px solid rgb(0, 20, 56);
     }
 
     .foo {
         color: wheat;
-        background-color: rgb(0, 20, 56);
+        background-color: #181C14;
+        
         /* justify-content: center; */
         padding: 5vh 4vw;
         
@@ -913,20 +1004,20 @@ body {
     }
 }
 
-@keyframes multicolor {
+/* @keyframes multicolor {
     from {
-        background-color: rgb(152, 222, 234);
+        background-color: black;
 
     }
 
     50% {
-        background-color: rgb(126, 236, 255);
+        background-color: black;
 
     }
 
     to {
-        background-color: rgb(152, 222, 234);
+        background-color: black;
 
     }
 
-}
+} */

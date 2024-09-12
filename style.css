@@ -4,7 +4,8 @@
 }
 
 body {
-    background-color: #697565;
+        background: linear-gradient(to right, #697565, #434b41);
+    
     animation: multicolor 10s infinite forwards;
 }
 
@@ -12,7 +13,7 @@ body {
 @media (min-width: 701px) {
     
     .nav{
-        height: 10%;
+        height: 7%;
         background-color: #181c14d7;
         position: fixed;
         display: block;
@@ -58,7 +59,8 @@ body {
     .main {
         width: 100%;
         height: 100vh;
-        background-color: #181C14;
+        background: linear-gradient(to right, #181C14, #040503);
+        /* background-color: #181C14; */
         clip-path: polygon(0 10vh, 70vw 0, 80vw 5vh, 100vw 0, 100vw 90vh, 30vw 100vh, 20vw 95vh, 0 100vh, 0 0);
         display: flex;
         flex-flow: wrap;
@@ -237,7 +239,8 @@ body {
 
     .qli {
         width: 100%;
-        background-color: #3C3D37;
+        /* background-color: #3C3D37; */
+        background: linear-gradient(to right, #3C3D37, #21211e);
     }
 
     .lis {
@@ -407,7 +410,8 @@ body {
 
     .foo {
         color: wheat;
-        background-color: #181C14;
+        background: linear-gradient(to right, #0f130a, #181C14);
+        /* background-color: #181C14; */
         /* justify-content: center; */
         padding: 8vh 4vw;
     }
@@ -552,7 +556,8 @@ body {
     .main {
         width: 100vw;
         height: 100vh;
-        background-color: #181C14;
+        background: linear-gradient(to right, #0f130a, #181C14);
+        
         clip-path: polygon(0 10vh, 70vw 0, 80vw 5vh, 100vw 0, 100vw 90vh, 30vw 100vh, 20vw 95vh, 0 100vh, 0 0);
         display: flex;
         flex-wrap: wrap;
@@ -725,7 +730,7 @@ body {
 
     .qli {
         width: 100%;
-        background-color: #3C3D37;
+        background: linear-gradient(to right, #3C3D37, #21211e);
     }
 
     .lis {
@@ -897,8 +902,8 @@ body {
 
     .foo {
         color: wheat;
-        background-color: #181C14;
-        
+        background: linear-gradient(to right, #0f130a, #181C14);
+
         /* justify-content: center; */
         padding: 5vh 4vw;
         

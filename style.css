@@ -185,10 +185,10 @@ body {
         animation-iteration-count: 1;
         animation-fill-mode: both;
         animation-timing-function: ease-in;
+
     }
 
     .im:hover {
-
         transform: scale(1.1);
     }
 
@@ -420,6 +420,185 @@ body {
         background-color: rgba(255, 255, 255, 0.311);
     }
 
+    .project{
+        background: linear-gradient(to right, #181C14, #040503);
+    }
+    .prohe{
+        padding: 10px;
+        font-size: 3vw;
+        color: #697565;
+        width: 50%;
+        margin: auto;
+        text-align: center;
+        
+    }
+    .procard{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+    .pro1 {
+        margin: 20px;
+        position: relative;
+        width: 600px;
+        height: 350px;
+        background-image: url(exp.png);
+        background-size: cover;
+        background-position: center;
+        border-radius: 15px;
+        overflow: hidden;
+        box-shadow: 0px 0px 5px 5px #ecdfcc29;
+        margin-bottom: 50px;
+        transition: transform 0.5s ease;
+    }
+    .project1 {
+        position: absolute;
+        width: 600px;
+        height: 350px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: white;
+        text-align: center;
+        padding: 20px;
+        background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+        border-radius: 15px;
+    }
+    .pro1:hover{
+        transform: scale(1.05);
+    }
+    .project1 a{
+        
+        color: #ECDFCC;
+        font-size: 2vw;
+    }
+    .project1 a:hover{
+        font-size: 2.2vw;
+        color: #3C3D37;
+    }
+    .pro2 {
+        margin: 20px;
+        margin-bottom: 40px;
+        position: relative;
+        width: 600px;
+        height: 350px;
+        background-image: url(food.png);
+        background-size: cover;
+        background-position: center;
+        border-radius: 15px;
+        overflow: hidden;
+        box-shadow: 0px 0px 5px 5px #ecdfcc29;
+        transition: transform 0.5s ease;
+
+    }
+    .pro2:hover{
+        transform: scale(1.05);
+    }
+    .project2 {
+        position: absolute;
+        width: 600px;
+        height: 350px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: white;
+        text-align: center;
+        padding: 20px;
+        background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+        border-radius: 15px;
+    }
+    .project2 a{
+        
+        color: #0f130a;
+        font-size: 2vw;
+    }
+    .project2 a:hover{
+        font-size: 2.2vw;
+        color: #ECDFCC;
+    }
+    .pro3 {
+        margin: 20px;
+        position: relative;
+        width: 600px;
+        height: 350px;
+        background-image: url(home.png);
+        background-size: cover;
+        background-position: center;
+        border-radius: 15px;
+        overflow: hidden;
+        box-shadow: 0px 0px 5px 5px #ecdfcc29;
+        margin-bottom: 50px;
+        transition: transform 0.5s ease;
+    }
+    .project3 {
+        position: absolute;
+        width: 600px;
+        height: 350px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: white;
+        text-align: center;
+        padding: 20px;
+        background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+        border-radius: 15px;
+    }
+    .pro3:hover{
+        transform: scale(1.05);
+    }
+    .project3 a{
+        position: absolute;
+        top: 300px;
+        left: 100px;
+        color: #ECDFCC;
+        font-size: 2vw;
+    }
+    .project3 a:hover{
+        font-size: 2.2vw;
+        color: #3C3D37;
+    }
+    .pro4 {
+        margin: 20px;
+        position: relative;
+        width: 600px;
+        height: 350px;
+        background-image: url(ascii.png);
+        background-size: cover;
+        background-position: center;
+        border-radius: 15px;
+        overflow: hidden;
+        box-shadow: 0px 0px 5px 5px #ecdfcc29;
+        margin-bottom: 50px;
+        transition: transform 0.5s ease;
+    }
+    .project4 {
+        position: absolute;
+        width: 600px;
+        height: 350px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: white;
+        text-align: center;
+        padding: 20px;
+        background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+        border-radius: 15px;
+    }
+    .pro4:hover{
+        transform: scale(1.05);
+    }
+    .project4 a{
+        position: absolute;
+        top: 300px;
+        left: 100px;
+        color: #ECDFCC;
+        font-size: 2vw;
+    }
+    .project4 a:hover{
+        font-size: 2.2vw;
+        color: #3C3D37;
+    }
+
     .contact {
         padding-top: 5vw;
         display: flex;
@@ -615,7 +794,6 @@ body {
     }
 
     .logo {
-        float: left;
         display: inline-block;
         width: 50px;
         height: 5vh;
@@ -1002,6 +1180,184 @@ body {
 
     .lc:hover {
         background-color: rgba(255, 255, 255, 0.311);
+    }
+    .project{
+        background: linear-gradient(to right, #181C14, #040503);
+    }
+    .prohe{
+        padding: 10px;
+        font-size: 3vw;
+        color: #697565;
+        width: 50%;
+        margin: auto;
+        text-align: center;
+        
+    }
+    .procard{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+    .pro1 {
+        margin: 20px;
+        position: relative;
+        width: 600px;
+        height: 350px;
+        background-image: url(exp.png);
+        background-size: cover;
+        background-position: center;
+        border-radius: 15px;
+        overflow: hidden;
+        box-shadow: 0px 0px 5px 5px #ecdfcc29;
+        margin-bottom: 50px;
+        transition: transform 0.5s ease;
+    }
+    .project1 {
+        position: absolute;
+        width: 600px;
+        height: 350px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: white;
+        text-align: center;
+        padding: 20px;
+        background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+        border-radius: 15px;
+    }
+    .pro1:hover{
+        transform: scale(1.05);
+    }
+    .project1 a{
+        
+        color: #ECDFCC;
+        font-size: 5vw;
+    }
+    .project1 a:hover{
+        font-size: 2.2vw;
+        color: #3C3D37;
+    }
+    .pro2 {
+        margin: 20px;
+        margin-bottom: 40px;
+        position: relative;
+        width: 600px;
+        height: 350px;
+        background-image: url(food.png);
+        background-size: cover;
+        background-position: center;
+        border-radius: 15px;
+        overflow: hidden;
+        box-shadow: 0px 0px 5px 5px #ecdfcc29;
+        transition: transform 0.5s ease;
+
+    }
+    .pro2:hover{
+        transform: scale(1.05);
+    }
+    .project2 {
+        position: absolute;
+        width: 600px;
+        height: 350px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: white;
+        text-align: center;
+        padding: 20px;
+        background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+        border-radius: 15px;
+    }
+    .project2 a{
+        
+        color: #0f130a;
+        font-size: 5vw;
+    }
+    .project2 a:hover{
+        font-size: 2.2vw;
+        color: #ECDFCC;
+    }
+    .pro3 {
+        margin: 20px;
+        position: relative;
+        width: 600px;
+        height: 350px;
+        background-image: url(home.png);
+        background-size: cover;
+        background-position: center;
+        border-radius: 15px;
+        overflow: hidden;
+        box-shadow: 0px 0px 5px 5px #ecdfcc29;
+        margin-bottom: 50px;
+        transition: transform 0.5s ease;
+    }
+    .project3 {
+        position: absolute;
+        width: 600px;
+        height: 350px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: white;
+        text-align: center;
+        padding: 20px;
+        background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+        border-radius: 15px;
+    }
+    .pro3:hover{
+        transform: scale(1.05);
+    }
+    .project3 a{
+        position: absolute;
+        top: 300px;
+        left: 150px;
+        color: #ECDFCC;
+        font-size: 5vw;
+    }
+    .project3 a:hover{
+        font-size: 2.2vw;
+        color: #3C3D37;
+    }
+    .pro4 {
+        margin: 20px;
+        position: relative;
+        width: 600px;
+        height: 350px;
+        background-image: url(ascii.png);
+        background-size: cover;
+        background-position: center;
+        border-radius: 15px;
+        overflow: hidden;
+        box-shadow: 0px 0px 5px 5px #ecdfcc29;
+        margin-bottom: 50px;
+        transition: transform 0.5s ease;
+    }
+    .project4 {
+        position: absolute;
+        width: 600px;
+        height: 350px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: white;
+        text-align: center;
+        padding: 20px;
+        background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+        border-radius: 15px;
+    }
+    .pro4:hover{
+        transform: scale(1.05);
+    }
+    .project4 a{
+        position: absolute;
+        top: 300px;
+        left: 150px;
+        color: #ECDFCC;
+        font-size: 5vw;
+    }
+    .project4 a:hover{
+        font-size: 2.2vw;
+        color: #3C3D37;
     }
 
     .contact {

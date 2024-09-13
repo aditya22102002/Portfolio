@@ -45,4 +45,5 @@ If you want to contact me, you can reach me at:
 
 Thank you for checking out my portfolio!
 
-![Example Image](https://github.com/aditya22102002/Portfolio/blob/main/adi.png)
+![Example Image](adi2.png)
+

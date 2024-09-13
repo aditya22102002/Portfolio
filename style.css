@@ -4,15 +4,15 @@
 }
 
 body {
-        background: linear-gradient(to right, #697565, #434b41);
-    
+    background: linear-gradient(to right, #697565, #434b41);
+
     animation: multicolor 10s infinite forwards;
 }
 
 
 @media (min-width: 701px) {
-    
-    .nav{
+
+    .nav {
         height: 7%;
         background-color: #181c14d7;
         position: fixed;
@@ -23,13 +23,17 @@ body {
         flex-wrap: nowrap;
         justify-content: space-between;
     }
+
     .logo {
+        position: fixed;
+        top: -1vh;
         display: inline-block;
         width: 120px;
-        height: 10vh;
+        height: 9vh;
         background-image: url(log.png);
         background-size: 100% 100%;
     }
+
     .social {
         margin: auto;
         display: inline-block;
@@ -38,14 +42,18 @@ body {
         border-bottom-left-radius: 5px;
         border-bottom-right-radius: 5px;
     }
-    .social a{
-        
+
+    .social a {
+
         padding: 30px 30px 0 0;
     }
+
     .social i {
-        font-size: 1.5vw; /* Adjust the size as needed */
-        color: #ECDFCC;
-      }
+        font-size: 1.5vw;
+        /* Adjust the size as needed */
+        color: #697565;
+    }
+
     .social:hover {
         transform: scale(1.05);
     }
@@ -53,8 +61,60 @@ body {
     .social a:hover {
         transform: scale(1.5);
         padding: 0 1vw;
-        color: aqua;
     }
+
+    .hamburger {
+        display: none;
+        flex-direction: column;
+        cursor: pointer;
+        gap: 5px;
+    }
+
+    .hamburger .bar {
+        width: 25px;
+        height: 3px;
+        background-color: white;
+    }
+
+    .opn {
+        padding-top: 1.5vh;
+    }
+
+    .opn li {
+        display: inline-block;
+        font-size: 1.4rem;
+        font-family: Tahoma, sans-serif;
+        position: relative;
+        /* Position relative for the pseudo-element */
+    }
+
+    .opn li a {
+        text-decoration: none;
+        color: #697565;
+        margin: 0px;
+        padding: 0px 15px;
+        position: relative;
+        /* Ensure the pseudo-element is positioned correctly */
+        display: inline-block;
+
+    }
+
+    .opn li a::before {
+        content: '';
+        position: absolute;
+        width: 0;
+        height: 2px;
+        bottom: 0;
+        left: 0;
+        background-color: wheat; /* Set the color of the underline */
+        transition: width 0.4s ease; /* Animation for the underline */
+    }
+    
+    .opn li a:hover::before {
+        width: 100%;
+        left: 0; /* Ensure it starts from the left edge */
+    }
+
 
     .main {
         width: 100%;
@@ -107,7 +167,7 @@ body {
         background-image: url(aditya.png);
         background-position: 50% 40%;
         background-size: cover;
-        background-repeat: no-repeat; 
+        background-repeat: no-repeat;
         background-color: #ECDFCC;
         margin-top: 25vh;
         margin-left: 5vw;
@@ -127,7 +187,12 @@ body {
         animation-timing-function: ease-in;
     }
 
-    .abtsec{
+    .im:hover {
+
+        transform: scale(1.1);
+    }
+
+    .abtsec {
 
         margin-top: 5%;
         margin-bottom: 5%;
@@ -138,7 +203,7 @@ body {
         padding: 5px;
         color: #ECDFCC;
     }
-    
+
     .abt {
         width: 50%;
         font-size: 1.8vw;
@@ -152,48 +217,55 @@ body {
     }
 
 
-    .postcard{
+    .postcard {
         width: 20%;
-        background-color: #181c14b7;
+        background-color: #181c1498;
         border-radius: 10px;
+        box-shadow: 0px 0px 10px 10px #181c145d;
     }
-    
-    .postim{
-        margin-top: 2%;
+
+    .postim {
+        /* margin-top: 2%; */
         height: 60%;
         background-image: url(adi2.png);
         background-position: 10% 10%;
         background-size: cover;
-        background-repeat: no-repeat; 
+        background-repeat: no-repeat;
     }
-    .pinfo{
+
+    .pinfo {
         padding-top: 20%;
         display: flex;
         width: 40%;
         margin: auto;
         font-size: 1vw;
     }
-    .loc{
+
+    .loc {
         display: inline-block;
     }
-    .postloc{
+
+    .postloc {
         display: inline-block;
     }
-    .pinfo2{
+
+    .pinfo2 {
         padding-top: 2%;
         display: flex;
         width: 60%;
         margin: auto;
         font-size: 1vw;
     }
-    .edu{
-        display: inline-block;
-    }
-    .postadd{
+
+    .edu {
         display: inline-block;
     }
 
-    .cv{
+    .postadd {
+        display: inline-block;
+    }
+
+    .cv {
         font-size: 1vw;
         padding-top: 5%;
         width: 50%;
@@ -256,34 +328,43 @@ body {
         padding-top: 5vh;
         margin-bottom: 2vh;
         color: #697565;
-        font-size: 2vw;
+        font-size: 3vw;
     }
-    .prog{
+
+    .prog {
         padding-top: 1vw;
-        font-size: 5vw;
+        font-size: 7vw;
     }
-    .cpp{
+
+    .cpp {
         display: inline-block;
     }
-    .java{
+
+    .java {
         display: inline-block;
     }
-    .html{
+
+    .html {
         display: inline-block;
     }
-    .css{
+
+    .css {
         display: inline-block;
     }
-    .js{
+
+    .js {
         display: inline-block;
     }
-    .sql{
+
+    .sql {
         display: inline-block;
     }
-    .ghub{
+
+    .ghub {
         display: inline-block;
         color: #ECDFCC;
     }
+
     .listext {
         display: flex;
         width: 50%;
@@ -376,6 +457,7 @@ body {
         border-bottom: 1px solid #ECDFCC;
         font-size: 1.5vw;
     }
+
     input:focus {
         outline: none;
     }
@@ -411,8 +493,6 @@ body {
     .foo {
         color: wheat;
         background: linear-gradient(to right, #0f130a, #181C14);
-        /* background-color: #181C14; */
-        /* justify-content: center; */
         padding: 8vh 4vw;
     }
 
@@ -466,6 +546,11 @@ body {
         transform: scale(1.2);
     }
 
+    .copy {
+        color: #434b41;
+        padding-top: 5vh;
+        font-size: 1vw;
+    }
 
 
     @keyframes first1 {
@@ -517,32 +602,44 @@ body {
 }
 
 @media (max-width:700px) {
-    .nav{
-        height: 10%;
+    .nav {
+        height: 5%;
         background-color: #181c14d7;
         position: fixed;
         display: block;
         width: 100%;
         z-index: 5;
         display: flex;
-        flex-wrap: nowrap;
-        justify-content: space-between;
+        /* flex-wrap: nowrap; */
+        /* justify-content: space-between; */
     }
+
     .logo {
+        float: left;
         display: inline-block;
-        width: 120px;
-        height: 10vh;
+        width: 50px;
+        height: 5vh;
         background-image: url(log.png);
         background-size: 100% 100%;
     }
-    .social a{
-        
-        padding: 30px 30px 0 0;
+
+    .social {
+        position: fixed;
+        left: 35vw;
+        padding-top: 7px;
     }
+
+    .social a {
+        padding: 10px 10px 0 0;
+
+    }
+
     .social i {
-        font-size: 1.5vw; /* Adjust the size as needed */
+        font-size: 7vw;
+        /* Adjust the size as needed */
         color: #ECDFCC;
-      }
+    }
+
     .social:hover {
         transform: scale(1.05);
     }
@@ -553,11 +650,71 @@ body {
         color: aqua;
     }
 
+    .hamburger {
+        position: fixed;
+        left: 90vw;
+        padding-right: 0;
+        padding-top: 1vh;
+        display: none;
+        flex-direction: column;
+        cursor: pointer;
+        gap: 8px;
+    }
+
+    .hamburger .bar {
+        width: 25px;
+        height: 3px;
+        background-color: wheat;
+        /* Set the color of the bars to wheat */
+    }
+
+    .opn ul {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background-color: #333;
+        width: 100%;
+        text-align: center;
+        padding: 10px;
+    }
+
+    .opn li {
+        display: inline-block;
+        font-size: 1.4rem;
+        font-family: Tahoma, sans-serif;
+    }
+
+    .opn li a {
+        text-decoration: none;
+        color: #ECDFCC;
+        margin: 0px;
+        padding: 0px 15px;
+    }
+
+    .opn li a:hover {
+        background-color: rgb(87, 87, 87);
+        color: white;
+        font-size: 1.5rem;
+    }
+
+    .opn ul.active {
+        top: 4.935vh;
+        width: 50%;
+        background-color: #181c14d7;
+        display: flex;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
     .main {
         width: 100vw;
         height: 100vh;
         background: linear-gradient(to right, #0f130a, #181C14);
-        
+
         clip-path: polygon(0 10vh, 70vw 0, 80vw 5vh, 100vw 0, 100vw 90vh, 30vw 100vh, 20vw 95vh, 0 100vh, 0 0);
         display: flex;
         flex-wrap: wrap;
@@ -588,7 +745,7 @@ body {
     .n {
         font-size: 2vh;
         color: #ECDFCC;
-        
+
         white-space: nowrap;
         overflow: hidden;
         animation: typing1 2s steps(16, end) 1 forwards;
@@ -604,7 +761,7 @@ body {
         background-image: url(aditya.png);
         background-position: 50% 40%;
         background-size: cover;
-        background-repeat: no-repeat; 
+        background-repeat: no-repeat;
         background-color: #ECDFCC;
         margin-top: 10vh;
         width: 30vh;
@@ -614,7 +771,7 @@ body {
         border-bottom-left-radius: 4000px;
         border-bottom-right-radius: 7000px;
         box-shadow: 0px 0px 50px 10px #ECDFCC, inset 0px 0px 50px 0px #ECDFCC;
-        
+
 
         animation-name: first;
         animation-duration: 4s;
@@ -622,7 +779,8 @@ body {
         animation-fill-mode: both;
         animation-timing-function: ease-in;
     }
-    .abtsec{
+
+    .abtsec {
         margin-top: 5%;
         margin-bottom: 5%;
         justify-content: center;
@@ -641,50 +799,56 @@ body {
         border-radius: 5px;
         font-family: 'Futura';
     }
-    
-    .postcard{
+
+    .postcard {
         background-color: #181c14b7;
         border-radius: 10px;
         width: 60%;
         margin: auto;
         height: 60vh;
     }
-    
-    .postim{
+
+    .postim {
         margin-top: 2%;
         height: 60%;
         background-image: url(adi2.png);
         background-size: cover;
-        background-repeat: no-repeat; 
+        background-repeat: no-repeat;
     }
-    .pinfo{
+
+    .pinfo {
         padding-top: 20%;
         display: flex;
         width: 40%;
         margin: auto;
         font-size: 3vw;
     }
-    .loc{
+
+    .loc {
         display: inline-block;
     }
-    .postloc{
+
+    .postloc {
         display: inline-block;
     }
-    .pinfo2{
+
+    .pinfo2 {
         padding-top: 7%;
         display: flex;
         width: 60%;
         margin: auto;
         font-size: 3vw;
     }
-    .edu{
-        display: inline-block;
-    }
-    .postadd{
+
+    .edu {
         display: inline-block;
     }
 
-    .cv{
+    .postadd {
+        display: inline-block;
+    }
+
+    .cv {
         font-size: 5vw;
         padding-top: 7%;
         width: 50%;
@@ -748,29 +912,37 @@ body {
         color: #697565;
         font-size: 10vw;
     }
-    .prog{
+
+    .prog {
         padding-top: 1vw;
         font-size: 20vw;
     }
-    .cpp{
+
+    .cpp {
         display: inline-block;
     }
-    .java{
+
+    .java {
         display: inline-block;
     }
-    .html{
+
+    .html {
         display: inline-block;
     }
-    .css{
+
+    .css {
         display: inline-block;
     }
-    .js{
+
+    .js {
         display: inline-block;
     }
-    .sql{
+
+    .sql {
         display: inline-block;
     }
-    .ghub{
+
+    .ghub {
         display: inline-block;
         color: #ECDFCC;
     }
@@ -831,6 +1003,7 @@ body {
     .lc:hover {
         background-color: rgba(255, 255, 255, 0.311);
     }
+
     .contact {
         padding-top: 5vw;
         display: flex;
@@ -868,6 +1041,7 @@ body {
         border-bottom: 1px solid #ECDFCC;
         font-size: 10vw;
     }
+
     input:focus {
         outline: none;
     }
@@ -906,12 +1080,12 @@ body {
 
         /* justify-content: center; */
         padding: 5vh 4vw;
-        
+
     }
 
     .foo h1 {
         color: white;
-        font-size: xx-large;
+        font-size: 6vw;
     }
 
     .foo a {
@@ -927,10 +1101,12 @@ body {
     .infonumb {
         display: inline-block;
         margin-bottom: 3vh;
+        font-size: 4vw;
     }
 
     .infomail {
         display: inline-block;
+        font-size: 2vw;
     }
 
     .infomai {
@@ -958,6 +1134,12 @@ body {
 
     .info a i:hover {
         transform: scale(1.2);
+    }
+
+    .copy {
+        color: #434b41;
+        padding-top: 5vh;
+        font-size: 3vw;
     }
 
 

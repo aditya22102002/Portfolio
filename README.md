@@ -14,7 +14,7 @@ It includes various sections that introduce me, showcase my coding profiles, and
 
 - **Intro Page**: A dynamic introduction with my photo popping out in a blob shape, along with a short intro stating my name and roles as a web developer and DSA enthusiast.
 - **About Me Page**: A brief description of who I am, complemented by a button that links to my CV.
-- **Coding Platforms**: A section with links to my profiles on three different coding platforms.
+- **Skills**: A section  with links to my profiles on three different coding platforms.
 - **Contact Form**: A functional form that allows users to reach out to me directly.
 - **Footer**: A simple and clean footer to conclude the website.
 
@@ -44,3 +44,5 @@ If you want to contact me, you can reach me at:
 - **Contact:** [9754633334]
 
 Thank you for checking out my portfolio!
+
+![Example Image](https://github.com/aditya22102002/Portfolio/blob/main/adi.png)

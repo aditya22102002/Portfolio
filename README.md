@@ -45,5 +45,9 @@ If you want to contact me, you can reach me at:
 
 Thank you for checking out my portfolio!
 
-![Example Image](adi2.png)
+![Example Image](home.png)
+![Example Image](about.png)
+![Example Image](skills.png)
+![Example Image](contact.png)
+![Example Image](end.png)
 
